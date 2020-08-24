@@ -44,13 +44,17 @@ padding-left:25px;
 
 #navbar li a{
     padding:15px;
-    color:black;
+    color:#fff;
     text-transform: uppercase;
     position: relative;
     transition: 0.7s all;
 }
 #navbar li a:hover{
-    color:#fff;
+
+    color:grey;
+}
+#navbar li a:active{
+    color:black; 
 }
 .navbar-toggler-icon{
     text-decoration:none;
@@ -72,13 +76,13 @@ width:100%;
 height:100%;
 padding: 15px 25px;
 }
- button{
+.search-btn{
     border:none;
     padding:15px 30px 15px 30px;
     font-weight: bold;
     background-color:rgba(255, 251, 21, 0.877) ;
     color:#fff;
-    margin-top:20px;
+    margin-top:2px;
 }
 
 
@@ -95,13 +99,14 @@ padding: 15px 25px;
 }
 .intro-travel p {
     padding-top:20px;
-    padding-bottom: 0px;;
+    padding-bottom: 20px;;
 }
 .pkg1{
     margin-top:20px;
-    border :1px solid  rgba(194, 188, 188, 0.774); 
-    margin-bottom:20px;
+    margin-bottom:0px;
     transition: transform 0.5s;
+  
+    box-shadow: 0px 5px 10px rgba(0,0,0,.25);
 }
 .pkg1:hover{
     transform:translateY(-5px);
@@ -127,6 +132,12 @@ padding: 15px 25px;
     left:50%;
     transform: translateX(-50%);
 }
+.international-para{
+    margin-top:30px;
+}
+.tour-detail{
+    margin-top:30px;
+}
 .pkg i{
     color: darkgoldenrod;
     padding-left:10px;
@@ -137,19 +148,16 @@ padding: 15px 25px;
     padding-left:10px;
 }
 .pkg .para-price{
-    font-size:1.5rem;
+    font-size:1rem;
     padding-left:10px;
-}
-.pkg1{
-    box-shadow: 0px 5px 10px rgba(0,0,0,.25);
-    
 }
 .pkg1 h6{
     padding-left:10px;
 }
 .pkg1 p{
-color:rgb(84, 111, 168);
+color:#555;
 padding-left:10px;
+line-height: 30px;;
 }
 .pkg-logo{
     text-align: center;
@@ -161,6 +169,64 @@ font-size:1.5rem;
 color:black;
 
 }
+.pkg button{
+    margin-left:25px;
+    padding:8px 16px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    width:80%;
+    border:1px solid rgb(175, 14, 62);
+    border-radius:5px;
+    background-color: #fff;
+}
+.pkg button:hover{
+    border:none;
+    
+}
+.pkg button a {
+    color:rgb(175, 14, 62);
+    text-decoration:none;
+}
+
+.pkg-details{
+    margin:50px 50px;
+}
+.pkg-details h2{
+    text-align:center;
+    padding-top:40px;
+    padding-bottom: 13px;
+    position:relative;
+    color:#555;
+}
+.pkg-details h2::after{
+    content:'';
+    width:140px;
+    background-color: rgb(175, 14, 62);
+    height:5px;
+    border-radius:5px;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+}
+.pkg-details img{
+    border-radius: 3px;;
+}
+.pkg-details .container-1{
+    margin-top:50px ;
+}
+#slider{
+   
+    width:100%;
+   height:390px;
+    
+}
+.travel-agency{
+   color:rgb(175, 14, 62);
+    padding-top:100px;
+    text-align: left;
+}
+
 
 .home-img h1{
     padding-top:170px;
@@ -178,31 +244,6 @@ color:black;
     font-size:3rem;
 }
 
-#card{
-padding-bottom:40px;
-    margin-bottom: 40px;
-    background-color: #edeff3;
-  
-   
-}
-.card{
-
-box-shadow:5px 5px 15px rgba(192, 173, 173, 0);
-cursor:pointer;
-margin-top:20px;
-transition:0.5s ease;
-text-align:center;
-
-}
-.card:hover{
-transform:scale(1.1);
-box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
-
-}
-.card img{
-    padding:10px 15px 10px 15px;
-   
-}
 .email-section{
     padding-top:60px;
 padding-bottom:60px;
